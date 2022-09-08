@@ -1,3 +1,28 @@
+
+EDIT
+okay, bit of an update after some learning. first off, 
+we need to see new line characters as 'line terminators', 
+not 'line seperators'. do not think of a file requiring a 
+new line at EOF, but instead think of every line in a
+file requiring a line terminator INCLUDING the last line. 
+
+now that we've got that straight. you can visualize what 
+vim does with the :set list setting. 
+
+from the very start, vim is adding a line terminator. this
+is why in the earlier example, when you added text, and 
+wrote to the file. 'wc -l foo' showed 1 line. 
+
+vim is ensuring that every line you write, is terminated.
+
+
+i think that's it.
+
+
+i have been thinking about new lines at EOF all wrong.
+these are not 'new line' characters, they are 'line terminator'
+characters. 
+------------------------------------------------------------
 WITHOUT WARNING, 
 vim will add a new line to the end of your file. 
 
