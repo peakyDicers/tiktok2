@@ -1,0 +1,21 @@
+WITHOUT WARNING, 
+vim will add a new line to the end of your file. 
+
+touch foo
+wc -l foo # this will show zero lines. that's cool. 
+
+# now, vim foo, write some text. backspace it all. write to file.
+wc -l foo # this will now show one line. 
+
+what's most infurating is, when you vim foo, vim
+doesn't show you the new line at the end of the file. 
+
+it just magically adds it when you write to the file. 
+
+???? don't touch my fking file wtf?
+
+what's even more stupid is, if i already have a new line
+at the end of file, it adds another one. like. 
+
+i gotta make sure to not add a new line while writing
+this now, so that i only have ONE new line at EOF. 
