@@ -1,3 +1,5 @@
-:set number
-:set nofixendofline
+syntax on
 
+set number
+set hlsearch
+set incsearch
