@@ -7,5 +7,5 @@ if [[ -f ~/.vimrc ]] || [[ -L ~/.vimrc ]]; then
     mv ~/.vimrc ~/.vimrc.bak 
 fi
 
-ln -s .vimrc ~/.vimrc
+ln -s "$(pwd)/.vimrc" ~/.vimrc
 echo "~/.vimrc successfully linked."
